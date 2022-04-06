@@ -1,6 +1,7 @@
 // Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -62,7 +63,7 @@ const questions = [
         name: 'contributing',
         message: 'Provide instructions for contributing to your project (Required. You can say you are not looking for contributers)',
         validate: contributingInput => {
-            if (contributeInput) {
+            if (contributingInput) {
                 return true;
             } else {
                 console.log('Please give instructions on how to contribute to your project!');
@@ -133,5 +134,5 @@ const promptUser = () => {
 };
 
 promptUser().then(userInput => {
-    console.log(userInput);
+    console.log(generateMarkdown(userInput));
 });

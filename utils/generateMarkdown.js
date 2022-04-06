@@ -25,8 +25,25 @@ ${data.description}
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
+- [Questions](#questions)
 
+## Installation
+${data.installation}
 
+## Usage
+${data.usage}
+
+## License
+${data.license}
+
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Questions
+If you would like to contact me with any questions about the application, my GitHub username is ${data.username} and my email is ${data.email}
 `;
 }
 
