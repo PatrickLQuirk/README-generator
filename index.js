@@ -58,37 +58,27 @@ const questions = [
         }
     },
     {
-        type: 'confirm',
-        name: 'confirmContributing',
-        message: 'Would you like to enter some information about how others can contribute to your project?',
-        default: true
-    },
-    {
         type: 'input',
         name: 'contributing',
-        message: 'Provide instructions for contributing to your project:',
-        when: ({ confirmContributing }) => {
-            if (confirmContributing) {
+        message: 'Provide instructions for contributing to your project (Required. You can say you are not looking for contributers)',
+        validate: contributingInput => {
+            if (contributeInput) {
                 return true;
             } else {
+                console.log('Please give instructions on how to contribute to your project!');
                 return false;
             }
         }
     },
     {
-        type: 'confirm',
-        name: 'confirmTests',
-        message: 'Would you like to enter some information about how others can run tests for your application (Answer no if you are not including tests)?',
-        default: true
-    },
-    {
         type: 'input',
         name: 'tests',
-        message: 'Provide instructions for running tests for your application:',
-        when: ({ confirmTests }) => {
-            if (confirmTests) {
+        message: 'Provide instructions for running tests for your application (Required)',
+        validate: testsInput => {
+            if (testsInput) {
                 return true;
             } else {
+                console.log('Please give instructions for running tests on your application!');
                 return false;
             }
         }
