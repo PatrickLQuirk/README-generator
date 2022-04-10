@@ -1,8 +1,8 @@
 
-# kljlksadf
+# Portfolio Generator
 
 ## Description
-asdfae
+A command line application that generates a portfolio for the user based on their inputs
 
 ## Table of Contents
 
@@ -14,19 +14,20 @@ asdfae
 - [Questions](#questions)
 
 ## Installation
-dfsaf
+Clone the repository from GitHub
 
 ## Usage
-asdfe
+Open the folder in a terminal, and then run 'node app.js'
 
 ## License
-What is a license
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+    
 
 ## Contributing
-asdfe
+I am not looking for contributers
 
 ## Tests
-lkjsadf
+No
 
 ## Questions
-If you would like to contact me with any questions about the application, my GitHub username is lakjsdkf and my email is alkdjsfkl
+If you would like to contact me with any questions about the application, my GitHub username is PatrickLQuirk and my email is patrickliamquirk@yahoo.com
