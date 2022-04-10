@@ -84,12 +84,12 @@ const questions = [
             }
         }
     },
-    // change this to a type that only allows one selection
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'What license is your application covered under?',
-        choices: ['Placeholder', 'What is a license', "I don't like this question"]
+        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 
+            'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'None']
     },
     {
         type: 'input',
@@ -104,7 +104,6 @@ const questions = [
             }
         }
     },
-    // perhaps make this question not required.
     {
         type: 'input',
         name: 'email',
