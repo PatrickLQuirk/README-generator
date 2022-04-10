@@ -51,6 +51,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license != 'None' && license) {
     return `${renderLicenseBadge(license)}${renderLicenseLink(license)}
+    This project is licensed under ${license}. You can read more about the license here: ${renderLicenseLink(license)}
     `
   }
   else {
